@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link the CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link the bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Adding Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-Commerce</title>
+</head>
+<body>
+    <!-- Header Section of Website -->
+        <section id="header">
+            <!-- Container Section For Styling Header Parts -->
+            <!-- Adding An Logo of the store -->
+                <img src="images/Logo.jpeg" alt="Logo" height="150" width="150">
+
+                <!-- Adding Navbar Element for Showing some nav contents of store -->
+                <div class="menu">
+                    <ul id="navbar">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <!-- <a href="#" id="close" class="active"><i class="far fa-times"></i></a> -->
+                    </ul>
+                </div>  
+                <div id="mobile">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <i class="fa-solid fa-bars toggle"></i>
+                </div>
+        </section>
+        <!-- Home Page Section -->
+        <section id="hero">
+            <h4>Trade-in-offer</h4>
+            <h2>Super value deals</h2>
+            <h1>On all products</h1>
+            <p>Save more with coupons & up to 70% off! </p>
+            <button>Shop Now</button>
+        </section>
+
+        <!-- Products Section-- This Section Displays Types and Number of Items in this Website-->
+
+        <section id="product1" class="section-p2">
+            <h2>Seasonal Products</h2>
+            <p><b><em>Summer Collection New Modern Design</em></b></p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="./images/Products/n1.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>NETPLAY</b></span>
+                        <h5>Cotton Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹629/-</h4>
+                        <h6>MRP <S>899.00</S> <em> (30% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n2.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ADIDAS</b></span>
+                        <h5>Cotton Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹980/-</h4>
+                        <h6>MRP <S>1449.00</S> <em> (52% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n3.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>WRONG</b></span>
+                        <h5>Oxford Shirt With Button-Down Collar</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹1297/-</h4>
+                        <h6>MRP <S>2495.00</S> <em> (48% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n4.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>DNMX</b></span>
+                        <h5>Camouflage Print Slim Fit Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹1049/-</h4>
+                        <h6>MRP <S>1449.00</S> <em> (30% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n5.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>THE BEAR HOUSE</b></span>
+                        <h5>Slim Fit Denim Plain Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹1123/-</h4>
+                        <h6>MRP <S>2495.00</S> <em> (55% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n6.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>The Indian Garage Co</b></span>
+                        <h5>Striped Flat-Front City Shorts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹572/-</h4>
+                        <h6>MRP <S>2199.00</S> <em> (74% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n7.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>LEVIS</b></span>
+                        <h5>Slim Fit Cotton Shirt with Flap Pockets</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹800/-</h4>
+                        <h6>MRP <S>2499.00</S> <em> (68% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/n8.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ALTHEORY</b></span>
+                        <h5>Geometric Pattern Shirt with Lapel Collar</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹1499/-</h4>
+                        <h6>MRP <S>2049.00</S> <em> (38% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Section For Highlighting Sales -->
+
+        <section id="banner" class="section-m1">
+            <h4>Moon-Soon Sales</h4>
+            <h2>Up to <span>60% Off</span> - All Clothing & Accessories</h2>
+            <button class="normal">Explore More</button>
+        </section>
+
+        <!-- Products Section-- This Sections Highlights with Top Branded Items.... -->
+        <section id="product1" class="section-p1">
+            <h2>New Arrivals</h2>
+            <p><b><em>Summer Collection New Modern Design</em></b></p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="./images/Products/f1.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ADIDAS</b></span>
+                        <h5>Cartoon Astronaut Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹869/-</h4>
+                        <h6>MRP <S>1349.00</S> <em> (55% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f2.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ADIDAS</b></span>
+                        <h5>Floral Astronaut Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹980/-</h4>
+                        <h6>MRP <S>1449.00</S> <em> (52% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f3.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ADIDAS</b></span>
+                        <h5>Cartoon Astronaut Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹1100/-</h4>
+                        <h6>MRP <S>1600.00</S> <em> (45% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f4.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ADIDAS</b></span>
+                        <h5>Cartoon Astronaut Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹799/-</h4>
+                        <h6>MRP <S>1149.00</S> <em> (35% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f5.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>ADIDAS</b></span>
+                        <h5>Floaral Astronaut Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹850/-</h4>
+                        <h6>MRP <S>1280.00</S> <em> (42% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f6.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>British Club</b></span>
+                        <h5>Ombre-Dyed Slim Fit Shirt with Patch Pocket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹817/-</h4>
+                        <h6>MRP <S>1899.00</S> <em> (57% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f7.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>Amira's Indian Ethinic Wear</b></span>
+                        <h5>Straight Palazzos Floaral With Elastic Waist</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹375/-</h4>
+                        <h6>MRP <S>1499.00</S> <em> (75% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="./images/Products/f8.jpg" alt="Product" width="200" height="200">
+                    <div class="des">
+                        <span><b>GUFRINA</b></span>
+                        <h5>Floral Tunic with Bishop Sleeves</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>₹540/-</h4>
+                        <h6>MRP <S>1199.00</S> <em> (55% Off)</em></h6>
+                        <p><b>Price inclusive of all taxes</b></p>
+                    </div>
+                    <a href="#" class="carts"><i class="fa-sharp fa-regular fa-heart"></i></a>&emsp;
+                    <a href="#" class="carts"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- ..........Small Banners Section......... -->
+        <section id="sm-banner" class="section-p1">
+            <div class="banner-box">
+                <h4>Crazy Deals</h4>
+                <h2>Buy 1 Get 1 Free...</h2>
+                <span>Best Classic Dress is on Sale at E-Shoppy</span>&emsp;
+                <button class="white">Learn More</button>
+            </div>
+            <div class="banner-box banner-box2">
+                <h4>Spring / Summer</h4>
+                <h2>Upcoming Season...</h2>
+                <span>Best Classic Dress is on Sale at E-Shoppy</span>&emsp;
+                <button class="white">Collection</button>
+            </div>
+        </section>
+        <section id="banner3">
+            <div class="banner-box">
+                <h2>SEASONAL SALE</h2>
+                <h3>Winter Collections - 50% OFF</h3>
+            </div>
+            <div class="banner-box banner-box2">
+                <h2>NEW FOOTWEAR COLLECTION</h2>
+                <h3>Spring / Summer 2023</h3>
+            </div>
+            <div class="banner-box banner-box3">
+                <h2>WOMEN'S WEAR</h2>
+                <h3>Trendy Collections</h3>
+            </div>
+        </section>
+
+        <!-- Newsletter Section - For More Updates Receives Through Email -->
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest stock and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your E-mail Address">
+                <button class="normal">Sign Up!</button>
+            </div>
+        </section>
+
+        <!-- Feature Seaction-- This Section Highlights the Website Services.. -->
+
+        <section id="feature" class="section-p1 feature">
+            <h2>Our Services</h2>
+            <p><b><em>We're here to help you, every step of the way</em></b></p>
+            <div class="pro">
+                <div class="fe-box">
+                    <img src="images/Features/feature1.avif" alt="feature1" width="140" height="100">
+                    <h6 class="free1">Free Shipping</h6>
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature2.avif" alt="feature2" width="140" height="100">
+                    <h6 class="free2">Online Order</h6>
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature3.avif" alt="feature3" width="140" height="100">
+                    <h6 class="free3">Save Money</h6>
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature4.avif" alt="feature4" width="140" height="100">
+                    <h6 class="free4">Promotions</h6>
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature7.avif" alt="feature4" width="140" height="100">
+                    <h6 class="free5">Easy Exchange</h6>
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature8.avif" alt="feature4" width="140" height="100">
+                    <h6 class="free6">Assured Quality</h6>
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature5.avif" alt="feature5" width="140" height="110">
+                    <h6 class="free7">Happy Sales</h6>&nbsp;
+                </div>
+                <div class="fe-box">
+                    <img src="images/Features/feature6.avif" alt="feature6" width="140" height="100">&nbsp;
+                    <h6 class="free8">24/7 Support</h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section - It Contains Brief Details of this Website Features -->
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="./images/Logo.jpeg" alt="Logo">
+                <h4>Contact</h4>
+                <p> <strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+                <p><strong>Phone: </strong> +01 2222 365 / (+91)01 2345 6789</p>
+                <p><strong>Timings: </strong> 10:00 - 18:00 , Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col1">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="col col2">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Whishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="./images/Install & Pay/app.jpg" alt="ios App">
+                    <img src="./images/Install & Pay/play.jpg" alt="Android App">
+                </div>
+                <p>Secured Payment Gateways </p>
+                <img src="./images/Install & Pay/pay.png" alt="Payments" width="300" class="payment">
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2019, E-Shopy - HTML CSS Ecommerce Template</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

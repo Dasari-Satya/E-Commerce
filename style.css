@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+/* Header Section- Main Page of the Website.. */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0 ,0, 0, 0.06);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: .03s ease;
+}
+#navbar li a:hover{
+    color: #088178;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+#header img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: -50px;
+}
+/* Hero Section---Home Page */
+
+#hero{
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: top 25% right 0;
+    height: 100vh;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -15px;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #038b82;
+}
+#hero button{
+    background-color: rgb(238, 159, 12);
+    color: black;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+#hero button:hover{
+    color: white;
+    background-color: green;
+}
+
+/* Products Section */
+
+#product1{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+#product1 h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #088178;
+}
+#product1{
+    background-color: #e1e6e2cc;
+    margin: 0px;
+    padding: 20px 30px;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    margin: 30px 30px;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 3px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0 , 0, 0.02);
+    transition: 0.1s ease;
+    margin-bottom: 10px;
+    margin-left: -25px;
+    margin-bottom: 30px;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0 , 0, 0.06);
+}
+#product1 .pro img{
+   margin: 0px 20px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #de0b0b;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .des h6{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(137, 4, 4);
+   
+}
+#product1 .pro .des em{
+    color: #f38052;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+}
+#product1 .pro .carts{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+}
+/* Banner Section- Highlights the Sales  */
+/* .section-m1{
+    margin: 40px 0;
+}  */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/Banner.png);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0 30px 0 0;
+}
+#banner h4{
+    color: rgba(243, 160, 5, 0.936);
+    font-size: 25px;
+    font-weight: 600;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ef3636;
+    font-size: 30px;
+    padding: 10px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 25px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+/* .....Small Banner Sections..... */
+.section-p1{
+    padding: 50px 40px;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/SBanners/sbanner1.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url(images/SBanners/sbanner2.jpg); 
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 25px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: .2s;
+}
+#sm-banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+/* Text Banners Section - Very Small Banners...... */
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/SBanners/sbanner3.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(images/SBanners/sbanner4.jpg);
+}
+#banner3 .banner-box3{
+    background-image: url(images/SBanners/sbanner5.jpg);
+}
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color: #d61811;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+/* Newsletter Section - For More Updates Receives Through Email */
+.section-m1{
+    margin: 30px 40px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/SBanners/banner6.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter span{
+    color: #ffbd27;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+    padding-top: 45px;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* section-Features--It Contains Brief Details of this Website Features */
+#feature{
+    background-color: #edf5e1;
+}
+.feature p{
+    text-align: center;
+} 
+.feature h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #088178;
+    text-align: center;
+}
+.feature .pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    margin: 50px 30px 0 40px;
+    box-shadow: 5px 5px 14px rgba(0 ,0, 0, 0.03);
+    border: 2px solid #088178;
+    border-radius: 4px;  
+}
+#feature .fe-box:hover{
+    box-shadow: 5px 5px 14px rgba(70 ,62, 221, 0.1);
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 6px 9px 6px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #daad86;
+    margin-top: 10px;
+}
+#feature img{
+    margin: 5px 5px 5px 8px;
+    display: flex;
+    width: 90%;
+    border-radius: 3px;
+} 
+
+
+/* Footer Section - It Contains Brief Details of this Website Features */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+    border-radius: 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/*  ...........Extra Stylings......... */
+
+footer .col .logo{
+    width: 45%;
+    height: 30%;
+    margin-top: -20px;
+    margin-left: -5px;
+}
+footer .install .row img{
+    width: 55%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .install .payment{
+    width: 65%;
+    height: 15%;
+}  
+
+/* Media Query- This is for making website Responsive */
+
+@media (max-width:768px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0 ,0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.03s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+        text-align: center;
+    } 
+    #mobile a{
+        color: #1a1a1a;
+        font-size: 35px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    #mobile{
+        display: flex;
+        /* align-items: center; */
+    }
+    .toggle{
+        color:#1a1a1a;
+        font-size: 35px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    /* #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        display: initial;
+        cursor: pointer;
+    }*/
+    #lg-bag{
+        display: none;
+    }
+}
